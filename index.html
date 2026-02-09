@@ -6,81 +6,136 @@
     <title>blog</title>
     <style>
         *{
-            text-align: center;
-            color: white;
+           align-items: center;
+           text-align: center;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body{
-            background: purple;
+            background: gray;
+            color: black;
         }
-        .top-nav{
+        h1{
             text-align: center;
-            background: black;
-            height: 150px;
+            display: inline;
         }
-         /* div{
+        .about{
             text-align: center;
+            font-size: x-large;
+            font-weight: 900;
+        }
+        header{
             background: black;
             color: white;
-         } */
-          a{
-            display: inline;
-            margin-top: 2rem;
+            height: 7rem;
+            padding-top: 2rem;
+        }
+        a{
             text-decoration: none;
-            font-size: x-large;
-            align-items: center;
-            padding-top: 2rem;
-
-          }
-          ol{
             display: inline;
-            padding: 3rem;
-            padding-top: 2rem;
-          }
-           #top{
-            text-align: center;
+            color: white;
+            font-size: xx-large;
+            font-weight: 800;
+            padding: 2rem;
+
+        }
+        a:hover{
+            color: red;
+        }
+        li{
+            
+            list-style: none;
+            display: inline-block;
+            flex-direction: column;
+            color: red;
+        }
+        input{
+            margin-right: 0px;
+        }
+        footer{
             background: black;
-            font-size: larger;
-           }
-           input{
-            height: 20px;
-            width: 500px;
-            text-align: center;
-            align-items: center;
-           }
+            color: white;
+            padding: 3rem;
+            bottom: 0;
+        }
+        .footer{
+            color: white;
+        }
+        #main-heading{
+                text-align: center;
+                font-weight: bolder;
+
+        }
+        img{
+            padding-top: 3rem;
+        }
+        /* #about-me{
+            background: green;
+        } */
+
+    
+
     </style>
 </head>
 <body>
     <header>
-        <h1>My personal Blog</h1>
-    <div>
-        <input type="search" alt="search here">
-        <button>search</button>
-    </div>
-        <nav>
+       
+        <nav id="main-nav">
             <div class="top-nav" id="top">
-                <li>
-                    <ol><a href="ht.html">Home</a></ol>
-                    <ol><a href="">About</a></ol>
-                    <ol><a href="">Contact</a></ol>
-                    <ol><a href="">Help</a></ol>
-                </li>
+                <ol>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Help</a></li>
+
+                    <div class="search">
+                       <input type="search" placeholder="search here.."    >
+                       <button type="submit">search</button>
+                    </div>
+                    
+                </ol>
             </div>
         </nav>
+          
+    <div>
     </header>
+     <h1 id="main-heading">My personal Blog</h1>
+
+    <section class="main">
+        <img src="images/21377.jpg" height="250px" width="250px">
+        <p>This is me, the creator of this website</p>
+
+        <h2>About</h2>
+        <article>
+           <h4>Personal Blog</h4>
+           <p>Ketty Personal Blog is a web browser developed by Ketty, released in 2026. Ketty personal Blog is the world's most popular web browser today!</p>
+        </article>
+        
+    </section>
      
-    <h2>About Me</h2>
+   
 
-    <p>Hello this is Ketty</p>
 
-    <h2>Contact</h2>
-    <p>to get in touch with  me, you can reach me via</p>
-    <ol>📩 email</ol>
-    <ol>📞Phone</ol>
+    <section>
+        <h2 >Contact</h2>
+            <p>to get in touch with  me, you can reach me via</p>
+            <li>📩 email: dgfhh@gmail.com</li><br>
+            <li>📞Phone: 0987654321</li>
+    </section>
+    
     
 
-    <div class="main">
+    <section class="main">
         <h2>Help</h2>
         <p>what kind of help do you need?</p>
-    </div>
+        <textarea placeholder="what kind of help do you need"></textarea>
+    </section>
+
+     <div>
+        
+        <footer>
+            <p class="footer">This is my footer</p>
+            personal blog@2026. All rights Reserved
+        </footer>
+     </div>
 </body>
 </html>
